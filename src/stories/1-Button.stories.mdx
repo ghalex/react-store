@@ -1,0 +1,20 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks'
+import * as stories from './1-Button.stories.js'
+import { Button } from 'components'
+
+<Meta title="Button" component={Button} />
+
+# Button
+
+With `MDX` we can define a story for `Button` right in the middle of our
+markdown documentation.
+
+<Preview>
+  <Story name="good">{stories.good()}</Story>
+</Preview>
+
+Bad story:
+
+<Preview>
+  <Story name="bad">{stories.bad()}</Story>
+</Preview>
